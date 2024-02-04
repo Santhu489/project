@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from prediction import predict
 
-st.title('Autism Syndromic Genes Classifier')
+st.title('Autism  Genes Classifier')
 st.markdown("A simple web app to classify genes as syndromic or non-syndromic.")
 
 # Load the data
