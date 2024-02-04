@@ -31,7 +31,6 @@ def preprocess_data(genes):
 
 def train_and_evaluate_classifiers(X, y):
     classifiers = {
-        'XGBoost': XGBClassifier(),
         'SVM': SVC(),
         'Random Forest': RandomForestClassifier()
     }
