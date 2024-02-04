@@ -15,7 +15,6 @@ def predict(gene_info):
     """
     # Load the models
     models = {
-        'XGBoost': load_model('XGBoost_model'),
         'SVM': load_model('SVM_model'),
         'Random Forest': load_model('Random Forest_model'),
     }
