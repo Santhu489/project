@@ -5,9 +5,10 @@ def load_model(model_name):
     """
     Load a trained model from disk.
     """
-    with open(f"{model_name}.pkl", "rb") as f:
+    with open(f"{model_name}_model.pkl", "rb") as f:
         model = pickle.load(f)
     return model
+
 
 def predict(gene_info):
     """
