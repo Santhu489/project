@@ -5,7 +5,7 @@ def load_model(model_name):
     """
     Load a trained model from disk.
     """
-    with open(f"{model_name}_model.pkl", "rb") as f:
+    with open(f"{model_name}.pkl", "rb") as f:
         model = pickle.load(f)
     return model
 
@@ -15,9 +15,9 @@ def predict(gene_info):
     """
     # Load the models
     models = {
-        'XGBoost': load_model('XGBoost_model.pkl'),
-        'SVM': load_model('SVM_model.pkl'),
-        'Random Forest': load_model('Random Forest_model.pkl'),
+        'XGBoost': load_model('XGBoost_model'),
+        'SVM': load_model('SVM_model'),
+        'Random Forest': load_model('Random Forest_model'),
     }
 
     # Make predictions using each model
