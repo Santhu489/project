@@ -61,7 +61,7 @@ def save_models(classifiers):
     Save the trained models to disk.
     """
     for clf_name, clf in classifiers.items():
-        filename = f"{clf_name}_model.pkl"
+        filename = f"{clf_name}.pkl"
         with open(filename, "wb") as f:
             pickle.dump(clf, f)
 
